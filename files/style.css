@@ -1,5 +1,163 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(26, 31, 31);
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+
+.container {
+  margin-top: 30vh;
+  margin-left: 20vw;
+  color: white;
+}
+
+.container>p{
+    padding: 5px 0;
+    font-size: large;
+}
+
+.container > h1 {
+  color: white;
+  padding: 0 0 10px 0;
+  font-size: 54px;
+}
+
+.container > h3 {
+  color: white;
+  padding: 5px 0 35px 0;
+  font-size: 32px;
+}
+
+.Bhopal {
+  color: rgb(240, 121, 161);
+  transition: all 0.75s ease-in-out;
+  font-family: "Meta", sans-serif;
+  background: rgba(211, 211, 211, 0.153);
+  text-shadow: none;
+  cursor: pointer;
+}
+
+.Bhopal:hover {
+  color: transparent;
+  background: none;
+  text-shadow: -15px 5px 5px #07bccc89, 10px -15px 5px #e601c089,
+    50px 10px 5px #e9019c88, 30px 20px 5px #f4046894, 0px 40px 10px #4728967c;
+}
+
+.box1 {
+  display: flex;
+  flex-direction: column;
+  color: lightgrey;
+}
+
+.box1 > p {
+  padding: 2px 0;
+}
+
+.box2 {
+  display: flex;
+  padding-top: 35px;
+}
+
+.box2 > a {
+  padding: 0 30px 0 0;
+  text-decoration: none;
+  position: relative;
+}
+
+.box2 > .bucket {
+  color: orange;
+}
+
+.box2 > .resume {
+  color: lawngreen;
+}
+
+.box2 > .blogs {
+  color: orangered;
+}
+
+.box3 {
+  display: flex;
+  padding: 25px 0;
+  color: grey;
+}
+
+.box3 > a {
+  padding: 0 15px 0 0;
+  text-decoration: none;
+  color: gray;
+  position: relative;
+}
+
+.box2 > a::after {
+  position: absolute;
+  content: "";
+  top: 125%;
+  left: 0;
+  width: 84%;
+  height: 2px;
+  background: lawngreen;
+  transform: scaleX(0.15);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.box2 > .bucket::after {
+  background: orange;
+}
+
+.box2 > .blogs::after {
+  background: orangered;
+}
+
+.box2 > a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.box3 > a::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  width: 86%;
+  height: 2px;
+  opacity: 25%;
+  background: grey;
+  transform: scaleX(1);
+  height: 70%;
+  transform-origin: left;
+  transition: all 0.5s;
+}
+
+.box3 > .facebook > i:hover {
+  transition: color 0.25s;
+  color: #3b5998;
+}
+
+.box3 > .linkedin > i:hover {
+  transition: color 0.25s;
+  color: #0a66c2;
+}
+
+.box3 > .github > i:hover {
+  transition: color 0.25s;
+  color: #c7329f;
+}
+.box3 > .email > i:hover {
+  color: #ac1a1a;
+  transition: color 0.25s;
+}
+
+.box3 > a:hover::after {
+  background: orangered;
+  opacity: 100%;
+  transform: scaleY(0.1);
+  transform-origin: bottom;
 }
