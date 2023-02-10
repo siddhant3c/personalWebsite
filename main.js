@@ -1,5 +1,5 @@
 //social media links
-const facebook = document.querySelector(".facebook")
+const facebook = document.querySelector(".facebook") 
 const linkedin = document.querySelector(".linkedin")
 const github = document.querySelector(".github")
 const email = document.querySelector(".email")
