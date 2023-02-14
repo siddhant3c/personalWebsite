@@ -1,13 +1,3 @@
-//social media links
-const facebook = document.querySelector(".facebook") 
-const linkedin = document.querySelector(".linkedin")
-const github = document.querySelector(".github")
-const email = document.querySelector(".email")
-
-
-facebook.addEventListener("click", window.open("https://google.com"))
-
-
 //particles
 
 var NUM_PARTICLES = (ROWS = 100) * (COLS = 200),
