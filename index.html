@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Siddhant Chourasia</title>
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Heebo' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/9abd886405.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
@@ -17,7 +17,6 @@
             <a href="#home" style="--i:1" class="active">Home</a>
             <a href="#about" style="--i:2">About</a>
             <a href="#projects" style="--i:3">Projects</a>
-            <a href="#artworks" style="--i:4">Artworks</a>
         </nav>
     </header>
 
@@ -28,9 +27,9 @@
             <h3>from <span class="Bhopal" ></span></h3>
             <p>"Two roads diverged in a wood, and I, I took the one less travelled by, and that has made all the difference."</p>
             <div class="box2">
-                <a class="skills" style="--i:5" href="#skills">My Interests and Skills</a>
+                <a class="skills" style="--i:5" href="#about">My Interests and Skills</a>
                 <a class="resume" style="--i:6" href="#resume">Download my Resume</a>
-                <a class="projects" style="--i:7" href="#projects" target="_blank">Check my Projects</a>
+                <a class="projects" style="--i:7" href="#projects">Check my Projects</a>
               </div>
               <div class="box3">
                 <a class="facebook" style="--i:8" href="https://www.facebook.com/siddhant.chourasia.146" target="_blank"><i class="fa-brands fa-facebook"></i></a>
@@ -46,95 +45,156 @@
     </section>
 
     <section class="about" id="about">
-        <button class="font-style">
-            About Me
-            <!-- If you have time, it would be better to generate this SVG for each button you want the effect on -->
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 426 98">
-              <defs>
-                <mask id="mask">
-                  <circle class="mask" r="0" fill="#fff" cx="0" cy="50" />
-                </mask>
-              </defs> 
-              <g id="toBeRevealed" mask="url(#mask)">
-              <linearGradient id="gradient">
-                  <stop stop-color="#fc0f47" offset="0%" />
-                  <stop stop-color="#9b040c" offset="100%" />
-                </linearGradient>
-                <rect width="426" height="98" fill="url(#gradient)" />
-                <text x="15" y="81" class="font-style" textAnchor="start" fill="#fff">About Me</text>
-              </g>
-            </svg>
-          </button>
+        <div class="a-title">
+            <h2>ABOUT ME</h2>
+        </div>
+        <div class="about-box">
+            <div class="about-img">
+                
+            </div>
+            <div class="about-content">
+                I am currently a third-year B.Tech undergraduate student in the department of Electrical Engineering at IIT Bombay,
+                and am pursuing my minor degree in the Computer Science and Engineering. <br> <br>I was raised in Bhopal, and completed my schooling there.
+                I have a deep interest in machine learning and its enormous number of real-world applications. I love to solve complex problems and I channelize it through coding.
+                My hobbies include skecthing and painting, and playing guitar.
+            </div>
+        </div>
     </section>
 
     <section class="projects" id="projects">
-
-    </section>
-
-    <section class="artworks" id="artworks">
+        <div class="p-title">
+            <h2>PROJECTS</h2>
+        </div>
         <div class="container">
-            <div class="card">
+            <div class="card" id="c1">
                 <div class="content">
                     <h2>01</h2>
                     <h3>Image Super-resolution</h3>
-                    <p>Enchancing low resolution images using ESRGAN</p>
-                    <a href="#">Read More</a>
+                    <p style="text-align: left; font-size: 9px;">
+                        <br>
+                        • Developed an understanding of CNNs by implementing MNIST handwritten digit image classifier using PyTorch<br>
+                        <br>
+                        • Developed a U-Net architecture using PyTorch to gain experience in developing complex neural network models<br>
+                        <br>
+                        • Carefully analysed the ESRGAN paper and compared with SRGAN to highlight the advancements in SISR techniques <br>
+                        <br>
+                        • Built and Trained the SRGAN model on a subset of the DIV2K dataset consisting of 800+ high-resolution images <br>
+                        <br>
+                        • Incorporated Residual-in-Residual Dense Block without batch normalisation, building the ESRGAN architecture
+                    </p>
+                    <a href="https://github.com/siddhant3c/SoC_project_ESRGANs" target="_blank">Read More</a>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" id="c2">
                 <div class="content">
                     <h2>02</h2>
                     <h3>Object Tracking in adverse weather conditions</h3>
-                    <p>Research Project at VIGIL, IITH</p>
-                    <a href="#">Read More</a>
+                    <b style="text-align: center; font-size: 11px;">Research Project at VIGIL, IITH</b>
+                    <p style="text-align: left; font-size: 9px;"> 
+                        <br>
+                        • Surveyed 10+ research papers pertaining to adverse weather data collection, object detection and frame translation
+                        <br> <br>
+                        • Surveyed the working of prominent models such as cycleGAN and Pix2PixGAN for image-to-image translation
+                        <br> <br>
+                        • Created a dataset with 4 classes consisting of 10.5k+ 5s clips of driving in adverse weather for training the model
+                        <br> <br>
+                        • Used semi-supervised learning for video-annotation, displaying efficiency in handling complex and tedious tasks
+                    </p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" id="c3">
                 <div class="content">
                     <h2>03</h2>
                     <h3>Sudoku Solver</h3>
-                    <p>openCV and deep learning approach to solve sudoku puzzles</p>
-                    <a href="#">Read More</a>
+                    <p style="text-align: left; font-size: 9px;">
+                        <br>
+                        • Utilized OpenCV library for preprocessing techniques like blurring and thresholding to improve contour detection
+                        <br> <br>
+                        • Developed an algorithm to detect and split the largest contours into boxes, and to obtain predictions on the digits
+                        <br> <br>
+                        • Trained the CNN model on robust dataset containing 10k+ images, achieving impressive validation accuracy of 99.6%
+                        <br> <br>
+                        • Implemented a backtracking algorithm to accurately solve the Sudoku and overlay the solution on the input image
+                    </p>
+                    <a href="https://github.com/siddhant3c/Sudoku-Solver">Read More</a>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" id="c4">
                 <div class="content">
                     <h2>04</h2>
                     <h3>Aerial Image Segmentation</h3>
-                    <p>Coursera Project Network</p>
-                    <a href="#">Read More</a>
+                    <p style="text-align: left; font-size: 9px;">
+                        <br>
+                        • Preprocessed and augmented a subset of Massachusetts Roads Dataset for data diversity and model generalization
+                        <br> <br>
+                        • Implemented U-Net model with EfficientNet encoder coupled with Dice Loss for precise aerial image segmentation
+                        <br><br>
+                        • Trained the final segmentation model using Dice Loss & BCE Loss, optimizing it with the Adam optimizer on gpu
+                    </p>
+                    <a href="https://github.com/siddhant3c/Aerial_Image_Segmentation">Read More</a>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" id="c5">
                 <div class="content">
                     <h2>05</h2>
                     <h3>Brain Tumor Classification</h3>
-                    <p>Image Classification using Convolutional Neural Networks</p>
-                    <a href="#">Read More</a>
+                    <p style="text-align: left; font-size: 9px;">
+                        <br>
+                        • Addressed class imbalance in the brain tumor MRI dataset using sophisticated data augmentation techniques
+                        <br><br>
+                        • Developed deep CNN architecture for classification and trained it on over 12k+ images yielding an accuracy of 98%
+                        <br><br>
+                        • Performed in-depth analysis and visualization of the model predictions, generating confusion matrices and ROC curves
+                    </p>
+                    <a href="https://github.com/siddhant3c/Brain_Tumor_Classification">Read More</a>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" id="c6">
                 <div class="content">
                     <h2>06</h2>
                     <h3>Monocular Depth Estimation</h3>
-                    <p>Depth map generation using MiDaS and DPT models</p>
-                    <a href="#">Read More</a>
+                    <p style="text-align: left; font-size: 9px;">
+                        <br>
+                        • Evaluated various models for monocular depth estimation of 2D images
+                        <br><br>
+                        • Critically analysed various research papers on depth estimation and point cloud classification
+                        <br><br>
+                        • Generated depth maps using MiDaS and DPT models from single 2D images
+                        <br><br>
+                        • Utilised Open3D library for visualisation and generated point clouds from the depth maps
+                        <br><br>
+                        • Responsible for implementing deep learning architecture for binary classification on the point clouds
+                    </p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" id="c7">
                 <div class="content">
                     <h2>07</h2>
-                    <h3>Tweet Emotion Recognition</h3>
-                    <p>Deep learning model trained using PyTorch library to predict sentiments</p>
-                    <a href="#">Read More</a>
+                    <h3>RISC pipelined processor</h3>
+                    <p style="text-align: left; font-size: 9px;">
+                        <br>
+                        • Designed RISC Pipelined Architecture using 8 general purpose registers capable of executing 14 R, I, J type
+                        instructions, with the R0 register always storing the Program Counter, using VHDL programming in Intel Quartus
+                        <br><br>
+                        • Successfully incorporated hazard mitigation techniques such as forwarding and stalling to enhance pipeline efficiency
+                        <br><br>
+                        • Tested and verified the working of each and every instruction by meticulously performing simulations on ModelSim
+                    </p>
+                    <a href="">Read More</a>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" id="c8">
                 <div class="content">
                     <h2>08</h2>
-                    <h3>my Chat-GPT</h3>
-                    <p>Implementing LLM (Large Language Models) to create personal Chat-GPT</p>
-                    <a href="#">Read More</a>
+                    <h3>Object Maneauvering Bot</h3>
+                    <p style="text-align: left; font-size: 9px;">
+                        <br>
+                        • Led the team of four members to design and run a wifi-controlled bot, powered by motors and Lithium-Polymer battery
+                        <br><br>
+                        • Facilitated the use of L293D motor driver and used differential mechanism to execute smooth turns and troughs
+                        <br><br>
+                        • Successfully manoeuvred the bot along the obstacle-ridden path by skillfully utilizing a ESP-32 microcontroller
+                    </p>
                 </div>
             </div>
         </div>
